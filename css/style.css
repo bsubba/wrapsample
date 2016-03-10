@@ -3,7 +3,7 @@ body{
 	color:#444;
 	overflow:hidden;
 	font:300 16px/18px Roboto, sans-serif;
-	background:url(http://raw.githubusercontent.com/khadkamhn/profile-card/master/bg.jpg) #031b21 no-repeat center fixed;
+	background:url(/wrapp/img/background.jpg) #031b21 no-repeat center fixed;
 	background-size:cover;
 }
 *,:after,:before{box-sizing:border-box}
@@ -14,7 +14,7 @@ body{
 	position:absolute;
 }
 .profile-card-wrap{
-	top:50%;
+	top:55%;
 	left:50%;
 	width:500px;
 	height:275px;
@@ -143,7 +143,7 @@ body{
 	background:rgba(54,106,157,.2);
 }
 
-.profile-card-wrap .check{display:none}
+.profile-card-wrap .check{display:none !important}
 .profile-card-wrap .toggle{
 	top:50%;
 	z-index:5;
@@ -199,4 +199,88 @@ body{
 	60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}
 	80%{transform:scale3d(.97,.97,.97)}
 	100%{opacity:1;transform:scale3d(1,1,1)}
+}
+
+
+/*********** weather widget starts from here *************/
+
+.widget {
+	height: 150px;
+	width: 250px;
+	position: absolute;
+    right: 35%;
+	top: 15%;
+	transform: translate(-50%, -50%);
+}
+
+.weatherIcon{
+	background-color: #f0f8fa;
+	height: 70%;
+	width: 100%;
+	position: absolute;
+    left: 0;
+	top: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.weatherIcon img{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 58%;
+	transform: translate(-50%, -50%);
+}
+
+.date {
+	background-color: #2e3336;
+	height: 30%;
+	width: 100%;
+	position: absolute;
+    left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Open Sans';
+    font-weight: 200;
+	font-size: 1.9375em;
+	line-height: 2.9375em;
+	
+	transform: translate(0, -50%);
+}
+
+h2 {
+	color: #ffff00;
+	font-family: 'Open Sans';
+    font-weight: 200;
+	font-size: 1.1875em;
+	line-height: 1.1875em;
+	text-align: left;
+    padding-left: 20px;
+}
+
+h3 {
+	color: #8f9b9d;
+	font-family: 'Open Sans';
+    font-weight: 400;
+	font-size: 1.2em;
+	line-height: 0.8125em;
+	text-align: center;
+}
+
+.temp {
+	background-color: #4dbde2;
+	height: 30%;
+	width: 24%;
+	position: absolute;
+    right: 0;
+	bottom: 0;
+	border-bottom-right-radius: 10px;
+}
+.city{
+   padding-top: 5%;
 }
